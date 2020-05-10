@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id = "missedCallObject" class = "com.selinium.assignment.MissedCallAlertService"/>
+        
+        <bean id = "helloTuneObject" class = "com.selinium.assignment.HelloTuneService"/>
+        
+        <bean id = "dataObject" class = "com.selinium.assignment.DataService"/>
+        
+        
+      <bean id = "airtel" class = "com.selinium.assignment.Airtel">
+        
+            <property name = "s" ref = "helloTuneObject"/>
+         
+       </bean>
+        
+        
+    
+
+        
+        
+</beans>        

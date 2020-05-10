@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id = "mathObject" class = "com.spring.looseCoupling.MathCheat"/>
+        
+        <bean id = "scienceObject" class = "com.spring.looseCoupling.ScienceCheat"/>
+        
+        
+      <bean id = "student" class = "com.spring.looseCoupling.Student">
+        
+            <property name = "c" ref = "scienceObject"/>
+         
+       </bean>
+        
+        
+    
+
+        
+        
+</beans>        
